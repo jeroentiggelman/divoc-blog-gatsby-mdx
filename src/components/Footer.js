@@ -30,36 +30,29 @@ export const Footer = () => {
       <FooterSocialWrapper>
         <FooterSocialIcons>
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/nathalie.hupin.photographie/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.facebook.publicURL} alt="Facebook logo" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/nathaliehupin/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.linkedin.publicURL} alt="Linkedin logo" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/nathaliehupin/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={data.instagram.publicURL} alt="Instagram logo" />
           </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={data.twitter.publicURL} alt="Twitter logo" />
-          </a>
         </FooterSocialIcons>
         <P size="xSmall" color="dark3">
-          © 2020 Company. All rights reserved
+          © 2020 Nathalie Hupin. Tous droits réservés
         </P>
       </FooterSocialWrapper>
     </FooterWrapper>

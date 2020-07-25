@@ -6,8 +6,10 @@ import { FeatureImageWrapper } from "../elements"
 export const FeatureImage = ({ fixed }) => {
   const data = useStaticQuery(graphql`
     query {
-      imageSharp(fixed: { originalName: { eq: "office.jpg" } }) {
-        fixed(width: 960) {
+      imageSharp(
+        fixed: { originalName: { eq: "undraw_through_the_window_51ew.png" } }
+      ) {
+        fixed(width: 1200) {
           ...GatsbyImageSharpFixed
         }
       }

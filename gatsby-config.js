@@ -1,12 +1,12 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "My MDX Blog",
-    description: "A simple blog built with Gatsby and MDX",
-    url: "https:photographicdesign.eu",
-    image: "/office.jpg",
-    twitterUsername: "@jeroentiggelman",
-    author: "Skillthrive",
+    title: "Divoc 2020",
+    description: "Divoc, confinement au jour le jour",
+    url: "https:divoc.be",
+    image: "/undraw_through_the_window_51ew.svg",
+    twitterUsername: "@nathaliehupin",
+    author: "Nathalie Hupin",
   },
   plugins: [
     {
@@ -49,7 +49,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`roboto mono`, `muli\:400,400i,700,700i`],
+        fonts: [`roboto mono`, `Alegreya\:700`],
         display: "swap",
       },
     },

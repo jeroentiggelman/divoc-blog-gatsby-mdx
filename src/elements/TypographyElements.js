@@ -46,6 +46,8 @@ export const P = styled.p`
         return props.theme.colors.dark2
       case "dark3":
         return props.theme.colors.dark3
+      case "darkTaupe":
+        return props.theme.colors.darkTaupe
       case "light1":
         return props.theme.colors.light1
       case "light2":
@@ -76,7 +78,7 @@ export const H1 = styled.h1`
         return props.theme.colors.dark1
     }
   }};
-  font-weight: 400;
+  font-weight: 700;
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
 `
@@ -100,7 +102,7 @@ export const H2 = styled.h2`
         return props.theme.colors.dark1
     }
   }};
-  font-weight: 400;
+  font-weight: 700;
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
 `

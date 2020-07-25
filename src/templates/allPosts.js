@@ -24,13 +24,18 @@ const allPosts = ({ pageContext, data }) => {
       <Seo />
       <FeatureImage />
       <Content>
-        <H1 textAlign="center" margin="0 0 1rem 0">
-          This is some dummy text
+        <H1 textAlign="left" margin="0 0 1rem 0">
+          Divoc, confinement au jour le jour
         </H1>
-        <P color="dark2" textAlign="center">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad tempore
-          iure, dicta sapiente deserunt illum repellat, rem cumque adipisci,
-          dignissimos nemo? Velit eos ipsum inventore
+        <P color="dark2" textAlign="left">
+          Même si nous nous y préparions, l’annonce d’un confinement pour
+          contrer Corona est tombée comme un couperet auprès de la population
+          belge. Bons vivants chaleureux et amicaux, les Belges ont vu avec
+          effroi la réduction de leur liberté personnelle, même s’il en allait
+          de la survie du collectif. Pour ma part, le confinement ne me pèse pas
+          trop, sauf que mes activités professionnelles sont mises en stand-by
+          pour une durée indéterminée. En effet, sans prise de vue, pas de
+          photos...
         </P>
         {posts.map(post => (
           <ContentCard

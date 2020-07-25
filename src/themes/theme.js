@@ -1,16 +1,17 @@
 export default {
   fonts: {
-    main: "Muli, sans-serif",
+    main: "Alegreya, serif",
     code: "Roboto Mono, monospace",
   },
   colors: {
-    main1: "hsl(207,70%,59%)",
+    main1: "#767987",
     main2: "hsl(207,70%,94%)",
-    dark1: "hsl(227,2%,12%)",
-    dark2: "hsl(227,2%,26%)",
+    dark1: "#413D3D",
+    dark2: "#767987",
     dark3: "hsl(227,2%,64%)",
-    light1: "hsl(0,0%,97%)",
-    light2: "hsl(0,0%,99%)",
+    darkTaupe: "#767987",
+    light1: "hsl(0,0%,100%)",
+    light2: "#BCD4CF",
   },
   breakpoints: {
     mobile: "only screen and (max-width: 50rem)",
