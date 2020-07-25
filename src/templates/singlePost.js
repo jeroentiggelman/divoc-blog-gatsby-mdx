@@ -39,8 +39,8 @@ export const pageQuery = graphql`
         featureImage {
           publicURL
           childImageSharp {
-            fixed(width: 960) {
-              ...GatsbyImageSharpFixed
+            fluid(maxWidth: 680) {
+              ...GatsbyImageSharpFluid
             }
           }
         }

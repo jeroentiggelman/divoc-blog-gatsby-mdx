@@ -4,7 +4,7 @@ module.exports = {
     title: "Divoc 2020",
     description: "Divoc, confinement au jour le jour",
     url: "https:divoc.be",
-    image: "/undraw_through_the_window_51ew.svg",
+    image: "/undraw_through_the_window_51ew.png",
     twitterUsername: "@nathaliehupin",
     author: "Nathalie Hupin",
   },
@@ -40,7 +40,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200,
+              maxWidth: 960,
             },
           },
         ],

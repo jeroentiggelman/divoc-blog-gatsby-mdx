@@ -7,10 +7,10 @@ export const FeatureImage = ({ fixed }) => {
   const data = useStaticQuery(graphql`
     query {
       imageSharp(
-        fixed: { originalName: { eq: "undraw_through_the_window_51ew.png" } }
+        fluid: { originalName: { eq: "undraw_through_the_window_51ew.png" } }
       ) {
-        fixed(width: 1200) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 960) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -19,7 +19,7 @@ export const FeatureImage = ({ fixed }) => {
   return (
     <FeatureImageWrapper>
       <Img
-        fixed={fixed ? fixed : data.imageSharp.fixed}
+        fluid={fluid ? fluid : data.imageSharp.fluid}
         style={{
           position: "absolute",
           left: 0,

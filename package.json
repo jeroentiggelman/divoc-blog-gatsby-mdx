@@ -1,7 +1,7 @@
 {
-  "name": "simple-mdx-blog",
+  "name": "divoc-2020",
   "private": true,
-  "description": "A simple blog created with Gatsby and MDX",
+  "description": "Divoc, confinement au jour le jour par Nathalie Hupin",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {

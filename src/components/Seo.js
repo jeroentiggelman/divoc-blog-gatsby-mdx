@@ -13,7 +13,13 @@ export const Seo = ({ description, keywords, title, image, url, author }) => {
         const metaAuthor = author || data.site.siteMetadata.author
         const metaUrl = url || data.site.siteMetadata.url
         const metaImage = image || data.site.siteMetadata.image
-        const metaKeywords = keywords || ["gatsby blog", "gatsby MDX blog"]
+        const metaKeywords = keywords || [
+          "Divoc blog",
+          "confinement",
+          "Covid-19",
+          "coronavirus",
+          "Belgique",
+        ]
 
         return (
           <Helmet
