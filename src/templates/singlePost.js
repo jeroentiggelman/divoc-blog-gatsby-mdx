@@ -14,7 +14,6 @@ const singlePost = ({ data, pageContext }) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fluid
   const seoImage = data.mdx.frontmatter.featureImage.publicURL
   const { previous, next } = pageContext
-  console.log({ previous })
 
   return (
     <Container>
