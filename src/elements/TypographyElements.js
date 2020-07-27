@@ -5,25 +5,25 @@ export const P = styled.p`
   font-size: ${props => {
     switch (props.size) {
       case "medium":
-        return "1.125rem"
+        return "24px"
       case "small":
         return "1rem"
       case "xSmall":
         return "0.875rem"
       default:
-        return "1.125rem"
+        return "24px"
     }
   }};
   line-height: ${props => {
     switch (props.size) {
       case "medium":
-        return "1.4375rem"
+        return "140%"
       case "small":
         return "1.375rem"
       case "xSmall":
         return "1.125rem"
       default:
-        return "1.4375rem"
+        return "140%"
     }
   }};
   text-decoration: ${props =>
@@ -60,8 +60,8 @@ export const P = styled.p`
 `
 
 export const H1 = styled.h1`
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 60px;
+  line-height: 100%;
   color: ${props => {
     switch (props.color) {
       case "dark1":
@@ -84,8 +84,8 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-  font-size: 1.5rem;
-  line-height: 1.875rem;
+  font-size: 30px;
+  line-height: 100%;
   color: ${props => {
     switch (props.color) {
       case "dark1":

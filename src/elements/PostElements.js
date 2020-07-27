@@ -16,6 +16,8 @@ export const PostWrapper = styled.main`
   h5,
   h6 {
     color: ${props => props.theme.colors.dark1};
+    font-weight: 700;
+    line-height: 100%;
   }
 
   h1:not(:first-child),
@@ -28,45 +30,36 @@ export const PostWrapper = styled.main`
   }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: 400;
+    font-size: 60px;
   }
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-    font-weight: 400;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 1.375rem;
-    line-height: 1.625rem;
-    font-weight: 700;
+    font-size: 24px;
   }
 
   h4 {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    font-weight: 400;
+    font-size: 20px;
+    line-height: 14%;
   }
 
   h5 {
     font-size: 1.125rem;
     line-height: 1.375rem;
-    font-weight: 700;
   }
 
   h6 {
     font-size: 1rem;
     line-height: 1.125rem;
-    font-weight: 700;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 1.125rem;
-    line-height: 1.875rem;
+    font-size: 18pt;
+    line-height: 140%;
     font-weight: 400;
     color: ${props => props.theme.colors.dark2};
     margin-top: 2rem;
@@ -90,12 +83,13 @@ export const PostWrapper = styled.main`
   }
 
   blockquote p {
-    font-style: italic;
-    font-size: 1.5rem;
-    line-height: 2.125rem;
-    text-align: center;
+    font-size: 32px;
+    line-height: 120%;
     max-width: 36rem;
     margin: 3rem auto;
+    padding-left: 1.6rem;
+    color: ${props => props.theme.colors.dark1};
+    border-left: 0.8rem solid ${props => props.theme.colors.dark3};
   }
 
   ul,
