@@ -1,10 +1,17 @@
 import React from "react"
+import Img from "gatsby-image"
 import { CardWrapper, P, H2 } from "../elements"
 import { Button } from "../components"
 
-export const ContentCard = ({ date, title, excerpt, slug }) => {
+export const ContentCard = ({ date, title, excerpt, slug, image }) => {
   return (
     <CardWrapper>
+      <Img
+        fluid={image}
+        style={{
+          width: "100%",
+        }}
+      />
       <P size="xSmall" textAlign="center" margin="0 0 0.5rem 0" color="dark2">
         {date}
       </P>
