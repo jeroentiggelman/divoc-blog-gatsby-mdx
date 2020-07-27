@@ -28,12 +28,22 @@ export const PaginationWrapper = styled.div`
   }
 `
 
+export const PostPaginationWrapper = styled.div`
+  display: flex;
+  grid-column: 4 / span 8;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+`
+
 export const PaginationElement = styled(props => <Link {...props} />)`
   font-size: 0.875rem;
   line-height: 1.125rem;
   font-weight: 400;
   text-decoration: none;
   margin: 0 2rem;
+  color: ${props => props.theme.colors.dark2};
 
   &:hover,
   &:focus {

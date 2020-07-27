@@ -6,6 +6,7 @@ exports.createPages = async function ({ actions, graphql }) {
           node {
             frontmatter {
               slug
+              title
             }
             id
           }
@@ -35,14 +36,21 @@ exports.createPages = async function ({ actions, graphql }) {
 
   // create single blog posts
 
-  data.allMdx.edges.forEach(edge => {
+  data.allMdx.edges.forEach((edge, index) => {
     const slug = edge.node.frontmatter.slug
     const id = edge.node.id
+
+    // previous and next posts
+    const previous =
+      index === data.allMdx.edges.length - 1
+        ? null
+        : data.allMdx.edges[index + 1]
+    const next = index === 0 ? null : data.allMdx.edges[index - 1]
 
     actions.createPage({
       path: slug,
       component: require.resolve(`./src/templates/singlePost.js`),
-      context: { id },
+      context: { id, previous, next },
     })
   })
 }
