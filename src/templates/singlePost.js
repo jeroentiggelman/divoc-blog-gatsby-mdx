@@ -6,7 +6,6 @@ import { Container, Post, FeatureImage, Seo } from "../components"
 
 const singlePost = ({ data }) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fluid
-
   const seoImage = data.mdx.frontmatter.featureImage.publicURL
 
   return (
@@ -19,6 +18,7 @@ const singlePost = ({ data }) => {
       <FeatureImage fluid={featureImage} />
       <Post>
         <H1 margin="0 0 2rem 0">{data.mdx.frontmatter.title}</H1>
+
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>
