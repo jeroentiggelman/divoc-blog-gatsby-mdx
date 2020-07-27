@@ -9,7 +9,6 @@ export default {
     dark1: "#413D3D",
     dark2: "#767987",
     dark3: "hsl(227,2%,64%)",
-    darkTaupe: "#767987",
     light1: "hsl(0,0%,100%)",
     light2: "#BCD4CF",
   },
