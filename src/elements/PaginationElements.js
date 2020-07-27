@@ -35,6 +35,11 @@ export const PostPaginationWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+  @media ${props => props.theme.breakpoints.mobile} {
+    grid-column: 2 / span 6;
+    padding: ${props =>
+      `${props.theme.spacings.medium} ${props.theme.spacings.medium}`};
+  }
 `
 
 export const PaginationElement = styled(props => <Link {...props} />)`

@@ -31,14 +31,23 @@ export const PostWrapper = styled.main`
 
   h1 {
     font-size: 60px;
+    @media ${props => props.theme.breakpoints.mobile} {
+      font-size: 30px;
+    }
   }
 
   h2 {
     font-size: 30px;
+    @media ${props => props.theme.breakpoints.mobile} {
+      font-size: 24px;
+    }
   }
 
   h3 {
     font-size: 24px;
+    @media ${props => props.theme.breakpoints.mobile} {
+      font-size: 20px;
+    }
   }
 
   h4 {
@@ -58,11 +67,14 @@ export const PostWrapper = styled.main`
   }
 
   p {
-    font-size: 18pt;
+    font-size: 24px;
     line-height: 140%;
     font-weight: 400;
     color: ${props => props.theme.colors.dark2};
     margin-top: 2rem;
+    @media ${props => props.theme.breakpoints.mobile} {
+      font-size: 20px;
+    }
   }
 
   a {
@@ -151,6 +163,6 @@ export const PostWrapper = styled.main`
   @media ${props => props.theme.breakpoints.mobile} {
     grid-column: 2 / span 6;
     padding: ${props =>
-      `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
+      `${props.theme.spacings.medium} ${props.theme.spacings.medium}`};
   }
 `

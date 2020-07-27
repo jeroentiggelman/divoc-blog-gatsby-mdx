@@ -57,6 +57,9 @@ export const P = styled.p`
     }
   }};
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+  @media ${props => props.theme.breakpoints.mobile} {
+    font-size: 24px;
+  }
 `
 
 export const H1 = styled.h1`
@@ -81,6 +84,9 @@ export const H1 = styled.h1`
   font-weight: 700;
   text-align: ${props => (props.textAlign ? props.textAlign : "left")};
   margin: ${props => (props.margin ? props.margin : 0)};
+  @media ${props => props.theme.breakpoints.mobile} {
+    font-size: 30px;
+  }
 `
 
 export const H2 = styled.h2`

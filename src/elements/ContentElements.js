@@ -16,6 +16,6 @@ export const ContentWrapper = styled.main`
   @media ${props => props.theme.breakpoints.mobile} {
     grid-column: 2 / span 6;
     padding: ${props =>
-      `${props.theme.spacings.medium} ${props.theme.spacings.large}`};
+      `${props.theme.spacings.small} ${props.theme.spacings.small}`};
   }
 `
