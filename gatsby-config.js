@@ -3,7 +3,7 @@ module.exports = {
   siteMetadata: {
     title: "Divoc 2020",
     description: "Divoc, confinement au jour le jour",
-    url: "https:divoc.be",
+    url: "https://divoc-2020.netlify.app",
     image: "/undraw_through_the_window_51ew.png",
     twitterUsername: "@nathaliehupin",
     author: "Nathalie Hupin",
@@ -74,5 +74,6 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
