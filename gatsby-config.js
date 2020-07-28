@@ -4,6 +4,7 @@ module.exports = {
     title: "Divoc 2020",
     description: "Divoc, confinement au jour le jour",
     url: "https://divoc-2020.netlify.app",
+    siteUrl: "https://divoc-2020.netlify.app",
     image: "/undraw_through_the_window_51ew.png",
     twitterUsername: "@nathaliehupin",
     author: "Nathalie Hupin",
